@@ -1,6 +1,6 @@
 
 
-# FiveM FFA (Free For All) Script
+# FiveM FFA (Free) Script
 
 This FiveM script allows you to set up a Free For All (FFA) mode on your server. The following document includes information on installation, configuration, and integration with `ox_inventory`.
 
