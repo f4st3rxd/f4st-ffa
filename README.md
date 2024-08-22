@@ -167,13 +167,13 @@ Bu FiveM scripti, sunucunuzda FFA (Free For All) modunu kurmanızı sağlar. Aş
 
 ## ox_inventory Integration
 
-If you are using `ox_inventory`, add the following line below the `weapon.dis` line in your `FastConfig_SH` configuration:
+If you are using `ox_inventory`, add the following line below the `weapon.disarm` line in your add this line:
 ```lua
-Inventory = "ox" -- or "qb" for other inventory systems
+if exports["f4st-ffa"]:InZone() then return end
 ```
 
 ## ox_inventory Entegrasyonu
 
-Eğer `ox_inventory` kullanıyorsanız, `FastConfig_SH` yapılandırmanızdaki `weapon.dis` satırının altına aşağıdaki satırı ekleyin:
+Eğer `ox_inventory` kullanıyorsanız, `ox_inventory/modules/weapon/client.lua` içindeki weapon.disarm fonksiyonun altına aşşağıdaki kodu eklemeniz gerekmektedir:
 ```lua
-Inventory = "ox" -- veya diğer envanter sistemleri için "qb
+if exports["f4st-ffa"]:InZone() then return end
