@@ -1,6 +1,5 @@
-Anladım. İşte README.md dosyasının tamamı, hem İngilizce hem Türkçe olarak, Markdown formatında:
 
-```markdown
+
 # FiveM FFA (Free For All) Script
 
 This FiveM script allows you to set up a Free For All (FFA) mode on your server. The following document includes information on installation, configuration, and integration with `ox_inventory`.
