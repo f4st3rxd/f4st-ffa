@@ -112,14 +112,17 @@ function RandomSpawnPlayer(area)
     if area == "smg" then 
         local RandomCoords = FastConfig_Smg_Area_Settings.SpawnCoords[math.random(1, #FastConfig_Smg_Area_Settings.SpawnCoords)]
         SetEntityCoords(PlayerPedId(), RandomCoords.x, RandomCoords.y, RandomCoords.z)
+        SetPedArmour(PlayerPedId(), 100)
         SendDataFunc()
     elseif area == "pistol" then 
         local RandomCoords = FastConfig_Pistol_Area_Settings.SpawnCoords[math.random(1, #FastConfig_Pistol_Area_Settings.SpawnCoords)]
         SetEntityCoords(PlayerPedId(), RandomCoords.x, RandomCoords.y, RandomCoords.z)
+        SetPedArmour(PlayerPedId(), 100)
         SendDataFunc()
     elseif area == "rifle" then 
         local RandomCoords = FastConfig_Rifle_Area_Settings.SpawnCoords[math.random(1, #FastConfig_Rifle_Area_Settings.SpawnCoords)]
         SetEntityCoords(PlayerPedId(), RandomCoords.x, RandomCoords.y, RandomCoords.z)
+        SetPedArmour(PlayerPedId(), 100)
         SendDataFunc()
     end 
 end
