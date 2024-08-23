@@ -6,6 +6,8 @@ This FiveM script allows you to set up a Free For All (FFA) mode on your server.
 
 Bu FiveM scripti, sunucunuzda FFA (Free For All) modunu kurmanızı sağlar. Aşağıdaki belgede, scriptin kurulumu, yapılandırması ve `ox_inventory` ile entegrasyonu hakkında bilgi bulabilirsiniz.
 
+- Preview: https://www.youtube.com/watch?v=o_7_49obsIU
+
 ## Table of Contents
 
 1. [Features](#features)
