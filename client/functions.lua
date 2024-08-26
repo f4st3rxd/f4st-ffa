@@ -82,6 +82,7 @@ function JoinArea(area)
         IN_ZONE = true
         CURRENT_WEAPON_TYPE = area
         CURRENT_ZONE = area
+        CURR_ARMOR = GetPedArmour(PlayerPedId())
         TriggerServerEvent("f4st-ffa:sendkillsclient", CURRENT_ZONE)
         TriggerServerEvent("f4st-ffa:server:joinarea",  area)
         RandomSpawnPlayer("smg")
@@ -91,6 +92,7 @@ function JoinArea(area)
         IN_ZONE = true
         CURRENT_WEAPON_TYPE = area
         CURRENT_ZONE = area
+        CURR_ARMOR = GetPedArmour(PlayerPedId())
         TriggerServerEvent("f4st-ffa:sendkillsclient", CURRENT_ZONE)
         TriggerServerEvent("f4st-ffa:server:joinarea",  area)
         RandomSpawnPlayer("pistol")
@@ -100,6 +102,7 @@ function JoinArea(area)
         IN_ZONE = true 
         CURRENT_WEAPON_TYPE = area
         CURRENT_ZONE = area
+        CURR_ARMOR = GetPedArmour(PlayerPedId())
         TriggerServerEvent("f4st-ffa:sendkillsclient", CURRENT_ZONE)
         TriggerServerEvent("f4st-ffa:server:joinarea",  area)
         RandomSpawnPlayer("rifle")
@@ -249,7 +252,7 @@ RegisterNUICallback("JoinArea3", function()
 end)
 
 RegisterNUICallback("ExitZone", function()
-    -- -- print("getcl")
+    SetPedArmour(PlayerPedId(), CURR_ARMOR)
     TriggerServerEvent("f4st-ffa:server:exitzone", CURRENT_ZONE)
 end)
 
