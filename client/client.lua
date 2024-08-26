@@ -8,6 +8,7 @@ PISTOL_ZONE_PLAYERS = 0
 RIFLE_ZONE_PLAYERS = 0
 D_KILLS = 0 
 D_DEATHS = 0
+CURR_ARMOR = nil
 
 RegisterNetEvent("f4st-ffa:client:getplayers", function(smg, pistol, rifle)
     SMG_ZONE_PLAYERS = smg 
